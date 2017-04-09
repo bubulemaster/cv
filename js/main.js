@@ -13,11 +13,14 @@ var templateGenerator = function (templateId, imageUrlPrefix, imageCssSelector, 
 
   for (var index = 0; index < data.length; index++) {
     currentItem = template.clone().prop({ id: "techno" + index })
+
     // Find image
     currentItem.find(imageCssSelector).css('background-image', 'url("'
       + imageUrlPrefix + data[index].img + '")')
+
     // Title
     currentItem.find('h2').text(data[index].name)
+
     // Star
     currentRate = data[index].rate
     currentItem.find('.star-rate').children().each(function (index, item) {
@@ -104,14 +107,74 @@ templateGenerator('#techno-template', './img/techno-used/', '.techno-image', '.u
 var skills = [
   {
     name: 'FrontEnd developpement',
-    img: 'seo-2151033_640.png',
+    img: 'seo-2151033_200.png',
     rate: 2
   },
   {
     name: 'BackEnd developpement',
-    img: 'computer-295481_640.png',
+    img: 'computer-295481_100.png',
     rate: 4
+  },
+  {
+    name: 'SysAdmin',
+    img: 'server-98466_100.png',
+    rate: 1
   }
 ]
 
 templateGenerator('#skill-template', './img/skills/', '.skill-image', '.skills', skills)
+
+var searchTechno = [
+  {
+    name: 'Aurelia JS',
+    img: '',
+    rate: 1
+  },
+  {
+    name: 'HashiCorp Vault',
+    img: '',
+    rate: 1
+  },
+  {
+    name: 'Meteor',
+    img: '',
+    rate: 1
+  },
+  {
+    name: 'Tuleap',
+    img: '',
+    rate: 0
+  },
+  {
+    name: 'rkt (CoreOS)',
+    img: '',
+    rate: 0
+  },
+  {
+    name: 'Unix BSD',
+    img: '',
+    rate: 0
+  },
+  {
+    name: 'Dart',
+    img: '',
+    rate: 1
+  },
+  {
+    name: 'Go',
+    img: '',
+    rate: 0
+  },
+  {
+    name: 'Kotlin',
+    img: '',
+    rate: 0
+  },
+  {
+    name: 'GWT',
+    img: '',
+    rate: 0
+  }
+]
+
+templateGenerator('#search-techno-template', './img/search-techno/', '.techno-image', '.search-techno', searchTechno)

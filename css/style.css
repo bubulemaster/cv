@@ -242,7 +242,7 @@ h2 {
  */
 
 #used-techno {
-  min-height: 100%;
+  /*min-height: 100%;*/
 }
 
 .used-techno {
@@ -256,7 +256,7 @@ h2 {
   margin-right: auto;
 }
 
-#techno-template, #skill-template {
+#techno-template, #skill-template, #search-techno-template {
   display: none;
   visibility: none;
 }
@@ -329,4 +329,19 @@ div.techno-image {
 
 .skill:hover > .star-rate {
   visibility: visible;
+}
+
+/******************************************************************************
+ * Techno that I hope learn
+ */
+
+.search-techno {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.search-techno > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
