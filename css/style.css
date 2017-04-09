@@ -1,0 +1,332 @@
+body, html {
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif !important;
+  font-weight: 500 !important;
+  line-height: 33px !important;
+  text-align: center !important;
+  color: #333 !important;
+}
+
+h1 {
+  font-size: 30px !important;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 20px !important;
+}
+
+/******************************************************************************
+ * Home section
+ */
+
+/* Image from https://pixabay.com/fr/ciel-nocturne-lune-mer-nuit-523892/ */
+@media all and (min-width: 0px) and (max-width:320px) {
+  #home {
+    background-image: url(../img/night-sky-523892_320.jpg);
+  }
+}
+
+@media all and (min-width: 321px) and (max-width:400px) {
+  #home {
+    background-image: url(../img/night-sky-523892_400.jpg);
+  }
+}
+
+@media all and (min-width: 401px) and (max-width:480px) {
+  #home {
+    background-image: url(../img/night-sky-523892_480.jpg);
+  }
+}
+
+@media all and (min-width: 481px) and (max-width:640px) {
+  #home {
+    background-image: url(../img/night-sky-523892_640.jpg);
+  }
+}
+
+@media all and (min-width: 641px) and (max-width:768px) {
+  #home {
+    background-image: url(../img/night-sky-523892_768.jpg);
+  }
+}
+
+@media all and (min-width: 769px) and (max-width:800px) {
+  #home {
+    background-image: url(../img/night-sky-523892_800.jpg);
+  }
+}
+
+@media all and (min-width: 801px) and (max-width:960px) {
+  #home {
+    background-image: url(../img/night-sky-523892_960.jpg);
+  }
+}
+
+@media all and (min-width: 961px) and (max-width:1024px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1024.jpg);
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width:1200px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1200.jpg);
+  }
+}
+
+@media all and (min-width: 1201px) and (max-width:1280px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1280.jpg);
+  }
+}
+
+@media all and (min-width: 1281px) and (max-width:1400px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1400.jpg);
+  }
+}
+
+@media all and (min-width: 1401px) and (max-width:1600px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1600.jpg);
+  }
+}
+
+@media all and (min-width:1601px) {
+  #home {
+    background-image: url(../img/night-sky-523892_1600.jpg);
+  }
+}
+
+#home {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+
+.screen-center {
+  position: absolute;
+  width: 100%;
+  /*
+    Si vous etes curieux et lisez le code source, sachez que les deux lignes du dessous
+    viennent de : https://www.alsacreations.com/tuto/lire/1032-comment-centrer-verticalement-sur-tous-les-navigateurs.html
+  */
+  top: 50%; /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+/*
+  Ma tete :-)
+  http://www.debray-jerome.fr/articles/Images-rondes-en-css3.html
+ */
+.roundedImage {
+  overflow:hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+  width:90px;
+  height:90px;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+}
+
+#name-and-function {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+#name-and-function > #name {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  margin-top: 20px;
+}
+
+#name-and-function > #function {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #BAC1D7;
+}
+
+#name-and-function > #icon {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+#name-and-function > #icon > a {
+  color: #FFFFFF;
+}
+
+#name-and-function > #icon > a:hover {
+  color: #000000;
+}
+
+#more {
+  color: #FFFFFF;
+  padding-top: 40px;
+  display: block;
+  cursor: pointer !important;
+
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-fill-mode: none;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  -webkit-animation-play-state: running;
+  -webkit-animation-timing-function: ease;
+
+  -moz-animation-delay: 0s;
+  -moz-animation-direction: normal;
+  -moz-animation-duration: 3s;
+  -moz-animation-fill-mode: none;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: bounce;
+  -moz-animation-play-state: running;
+  -moz-animation-timing-function: ease;
+
+  -ms-animation-delay: 0s;
+  -ms-animation-direction: normal;
+  -ms-animation-duration: 3s;
+  -ms-animation-fill-mode: none;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-name: bounce;
+  -ms-animation-play-state: running;
+  -ms-animation-timing-function: ease;
+
+  -khtml-animation-delay: 0s;
+  -khtml-animation-direction: normal;
+  -khtml-animation-duration: 3s;
+  -khtml-animation-fill-mode: none;
+  -khtml-animation-iteration-count: infinite;
+  -khtml-animation-name: bounce;
+  -khtml-animation-play-state: running;
+  -khtml-animation-timing-function: ease;
+
+  -o-animation-delay: 0s;
+  -o-animation-direction: normal;
+  -o-animation-duration: 3s;
+  -o-animation-fill-mode: none;
+  -o-animation-iteration-count: infinite;
+  -o-animation-name: bounce;
+  -o-animation-play-state: running;
+  -o-animation-timing-function: ease;
+
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-duration: 3s;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-play-state: running;
+  animation-timing-function: ease;
+}
+
+/******************************************************************************
+ * Techno that I use section
+ */
+
+#used-techno {
+  min-height: 100%;
+}
+
+.used-techno {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.used-techno > div > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#techno-template, #skill-template {
+  display: none;
+  visibility: none;
+}
+
+div.techno-image {
+  width: 90px;
+  height: 90px;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.techno-row {
+  margin-bottom: 20px;
+}
+
+.techno-row:hover > .star-rate {
+  visibility: visible;
+}
+
+/*
+ * Star rate
+ */
+.star-gray {
+  color: #DDDDDD;
+}
+
+.start-yellow {
+  color: #FFD700;
+}
+
+.star-rate {
+  text-align: center;
+  visibility: hidden;
+}
+
+/******************************************************************************
+ * Techno that I use section
+ */
+
+#skills {
+  background: linear-gradient(45deg, #a177ff, #ff6d92);
+  padding-bottom: 50px;
+}
+
+#skills h1, #skills h2 {
+  color: #ffffff !important;
+}
+
+.skill {
+  text-align: center;
+}
+
+.level {
+  color: #ffffff;
+}
+
+
+.skill-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity:0.75;
+  height: 150px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill:hover > .star-rate {
+  visibility: visible;
+}
