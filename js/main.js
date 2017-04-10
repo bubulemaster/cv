@@ -127,52 +127,52 @@ templateGenerator('#skill-template', './img/skills/', '.skill-image', '.skills',
 var searchTechno = [
   {
     name: 'Aurelia JS',
-    img: '',
+    img: 'aurelia.png',
     rate: 1
   },
   {
     name: 'HashiCorp Vault',
-    img: '',
+    img: 'vault.png',
     rate: 1
   },
   {
     name: 'Meteor',
-    img: '',
+    img: 'meteor.png',
     rate: 1
   },
   {
     name: 'Tuleap',
-    img: '',
+    img: 'tuleap.png',
     rate: 0
   },
   {
     name: 'rkt (CoreOS)',
-    img: '',
+    img: 'rkt.png',
     rate: 0
   },
   {
     name: 'Unix BSD',
-    img: '',
+    img: 'dragonbsd.png',
     rate: 0
   },
   {
     name: 'Dart',
-    img: '',
+    img: 'dart.png',
     rate: 1
   },
   {
     name: 'Go',
-    img: '',
+    img: 'go.png',
     rate: 0
   },
   {
     name: 'Kotlin',
-    img: '',
+    img: 'kotlin.png',
     rate: 0
   },
   {
     name: 'GWT',
-    img: '',
+    img: 'gwt.png',
     rate: 0
   }
 ]

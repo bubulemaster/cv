@@ -296,16 +296,19 @@ div.techno-image {
 }
 
 /******************************************************************************
+ * For gradient background
+ */
+.background-gradient h1, .background-gradient h2 {
+  color: #ffffff !important;
+}
+
+/******************************************************************************
  * Techno that I use section
  */
 
 #skills {
-  background: linear-gradient(45deg, #a177ff, #ff6d92);
+  background: linear-gradient(45deg, #E789A1, #A35A9F);
   padding-bottom: 50px;
-}
-
-#skills h1, #skills h2 {
-  color: #ffffff !important;
 }
 
 .skill {
@@ -344,4 +347,13 @@ div.techno-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+/******************************************************************************
+ * My experience
+ */
+
+#my-experience {
+  background: linear-gradient(135deg, #E789A1, #A35A9F);
+  padding-bottom: 50px;
 }
