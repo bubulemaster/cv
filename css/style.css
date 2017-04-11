@@ -307,7 +307,8 @@ div.techno-image {
  */
 
 #skills {
-  background: linear-gradient(45deg, #E789A1, #A35A9F);
+  /*background: linear-gradient(45deg, #E789A1, #A35A9F);*/
+  background-color: #A35A9F;
   padding-bottom: 50px;
 }
 
@@ -354,6 +355,71 @@ div.techno-image {
  */
 
 #my-experience {
-  background: linear-gradient(135deg, #E789A1, #A35A9F);
+  /*background: linear-gradient(135deg, #E789A1, #A35A9F);*/
+  background-color: #E789A1;
   padding-bottom: 50px;
+}
+
+.timeline > .banner {
+  display: inline-block;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  -moz-box-shadow: 8px 8px 12px #aaa;
+  -webkit-box-shadow: 8px 8px 12px #aaa;
+  box-shadow: 8px 8px 12px #555;
+}
+
+.timeline > .banner > .title {
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif !important;
+  padding: 5px 5px 5px 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.timeline > .content {
+  font-family: "Open Sans", sans-serif !important;
+  padding: 5px 5px 5px 5px;
+  display: inline-block;
+}
+
+.timeline > .banner > .date {
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif !important;
+  padding: 5px 5px 5px 5px;
+  width: 60px;
+  text-align: center;
+}
+
+.timeline.yellow > .banner >.title {
+  background: linear-gradient(180deg, #FFC022, #facf00);
+  color: #ffffff;
+}
+
+.timeline.yellow > .banner > .date {
+  background-color: #ffffff;
+  color: #facf00;
+}
+
+.timeline.yellow > .content {
+  color: #ffffff;
+}
+
+/******************************************************************************
+ * My speciality
+ */
+
+#you {
+  /*background: linear-gradient(135deg, #E789A1, #A35A9F);*/
+  background-color: #E789A1;
+  padding-bottom: 50px;
+}
+
+#you .content {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 5px;
 }

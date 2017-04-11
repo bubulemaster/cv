@@ -1,5 +1,5 @@
-Localisation : Nantes
 Lien pour telecharger CV au format PDF
 L'image background de la home doit aussi tenir compte de la hauteur
 Image techno et skill doivent tenir compte de la taille d'affichage
 Utiliser un gestion de dependance front (bower, yarn ?)
+Ajouter animation d'affichage
