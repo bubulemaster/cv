@@ -448,7 +448,9 @@ div.techno-image {
 }
 
 #meeting .jug {
-  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/meeting/nantes-jug.png);  
   text-align: center;
   width: 300px;
   height: 300px;
