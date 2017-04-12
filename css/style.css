@@ -415,8 +415,41 @@ div.techno-image {
 }
 
 /******************************************************************************
- * Techno that I hope learn
+ * Meeting section
  */
 #meeting {
   background-color: #020001;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#meeting .web2day {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/meeting/web2day.png);
+  width: 300px;
+  height: 300px;
+}
+
+#meeting .devfest {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/meeting/devfest-nantes.svg);
+  width: 300px;
+  height: 300px;
+}
+
+#meeting .software-craftsmanship {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/meeting/software-craftsmanship.png);
+  width: 300px;
+  height: 300px;
+}
+
+#meeting .jug {
+  color: #ffffff;
+  text-align: center;
+  width: 300px;
+  height: 300px;
 }
