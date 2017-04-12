@@ -434,7 +434,7 @@ div.techno-image {
 #meeting .devfest {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/meeting/devfest-nantes.svg);
+  background-image: url(../img/meeting/devfest-nantes.png);
   width: 300px;
   height: 300px;
 }
@@ -450,7 +450,7 @@ div.techno-image {
 #meeting .jug {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/meeting/nantes-jug.png);  
+  background-image: url(../img/meeting/nantes-jug.png);
   text-align: center;
   width: 300px;
   height: 300px;
