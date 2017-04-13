@@ -24,6 +24,30 @@ h2 {
   font-size: 20px !important;
 }
 
+.btn {
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  -o-border-radius:4px;
+  -ms-border-radius:4px;
+  -khtml-border-radius:4px;
+  border-radius:4px;
+
+  padding-bottom:14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 14px;
+
+  text-align: center;
+  text-decoration-color: #ffffff;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  font-family: "Open Sans", sans-serif;
+}
+
 /******************************************************************************
  * Home section
  */
@@ -165,6 +189,7 @@ h2 {
   font-size: 40px;
   letter-spacing: 2px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #name-and-function > #icon > a {
@@ -172,12 +197,11 @@ h2 {
 }
 
 #name-and-function > #icon > a:hover {
-  color: #000000;
+  color: #018ECB;
 }
 
 #more {
   color: #FFFFFF;
-  padding-top: 40px;
   display: block;
   cursor: pointer !important;
 
@@ -236,6 +260,26 @@ h2 {
   animation-timing-function: ease;
 }
 
+.download {
+  padding-bottom: 50px;
+}
+
+.btn-download {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding:14px 40px;
+  border: 1px solid #6e6d6c;
+  margin-top: 40px;
+}
+
+.btn-download:hover {
+  color: #fff;
+  background-color: #018ECB;
+  border: 1px solid #018ECB;
+  transition: 300ms;
+}
+
 /******************************************************************************
  * Presentation section
  */
@@ -276,7 +320,7 @@ h2 {
 }
 
 #me .keyword {
-  color: #FF9F14;
+  color: #A35A9F;
 }
 
 /******************************************************************************
@@ -285,7 +329,7 @@ h2 {
 
 #you {
   /*background: linear-gradient(135deg, #E789A1, #A35A9F);*/
-  background-color: #E789A1;
+  background-color: #A35A9F;
 }
 
 #you .logo {
@@ -418,40 +462,42 @@ div.techno-image {
  * Meeting section
  */
 #meeting {
-  background-color: #020001;
+  background-color: #A35A9F;
   padding-left: 1%;
   padding-right: 1%;
 }
 
-#meeting .web2day {
+#meeting .meet {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/meeting/web2day.png);
   width: 300px;
   height: 300px;
+}
+
+#meeting .web2day {
+  background-image: url(../img/meeting/web2day.png);
 }
 
 #meeting .devfest {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url(../img/meeting/devfest-nantes.png);
-  width: 300px;
-  height: 300px;
+  -webkit-animation-delay: 100ms;
+  -khtml-animation-delay: 100s;
+  -ms-animation-delay: 100s;
+  -o-animation-delay: 100s;
 }
 
 #meeting .software-craftsmanship {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url(../img/meeting/software-craftsmanship.png);
-  width: 300px;
-  height: 300px;
+  -webkit-animation-delay: 200ms;
+  -khtml-animation-delay: 200s;
+  -ms-animation-delay: 200s;
+  -o-animation-delay: 200s;
 }
 
 #meeting .jug {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url(../img/meeting/nantes-jug.png);
-  text-align: center;
-  width: 300px;
-  height: 300px;
+  -webkit-animation-delay: 300ms;
+  -khtml-animation-delay: 300s;
+  -ms-animation-delay: 300s;
+  -o-animation-delay: 300s;
 }

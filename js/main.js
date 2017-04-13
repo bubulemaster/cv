@@ -277,3 +277,11 @@ var searchTechno = [
 ]
 
 templateGenerator('#search-techno-template', './img/search-techno/', '.techno-image', '.search-techno', searchTechno)
+
+var wow = new WOW(
+  {
+    boxClass:     'animated',
+    animateClass: 'animated'
+  }
+);
+wow.init();

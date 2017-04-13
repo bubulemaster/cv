@@ -13,7 +13,8 @@
   <link type="text/css" rel="stylesheet" href="css/animate.min.css">
   <link type="text/css" rel="stylesheet" href="css/grillade.css">
 
-  <script src="js/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
 <body>
   <header id="home">
 
@@ -25,11 +26,9 @@
       <br />
 
       <span id="name-and-function">
-        <div id="name">Emeric MARTINEAU</div>
-        <div id="function">
-          Developpeur orientation DevOps et usine logicielle
-        </div>
-        <div id="icon">
+        <div id="name" class="animated fadeInLeftBig">Emeric MARTINEAU</div>
+        <div id="function" class="animated fadeInRightBig">Developpeur orientation DevOps et usine logicielle</div>
+        <div id="icon" class="animated fadeInUpBig">
           <a href="https://twitter.com/MartineauEmeric" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 
           <a href="https://github.com/bubulemaster" title="github"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -39,6 +38,10 @@
           <a href="http://stackoverflow.com/users/5524929/bubulemaster" title="stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
 
           <a href="http://emericmartineau.blogspot.fr/" title="mon blog"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="download animated fadeInUpBig">
+          <a class="btn btn-download" href="dl/cv-emeric-martineau.pdf">Télécharger le CV</a>
         </div>
       </span>
 
@@ -52,21 +55,21 @@
 
   <section id="me">
     <div class="grid-2 has-gutter presentation">
-      <div class="content">
+      <div class="content animated fadeInLeft">
         <p>Vous avez des experts mais il vous manque une vision transverse ?</p>
         <p>Vous chercher un moyen de fournir les meilleurs outils aux <span class="keyword">#dev</span> tout en accompagnant les <span class="keyword">#ops</span> dans la mutation de leur quotidien qu'impose l'<span class="keyword">#agility</span> et le <span class="keyword">#devops</span>.</p>
         <p>Fort de 6 ans d'expérience dans le domaine de l'usine logicielle, j'accompagne les <span class="keyword">#dev</span> dans la prise en compte des exigences du <span class="keyword">#run</span> et des <span class="keyword">#ops</span> dans les nouveaux enjeux que sont le <span class="keyword">#cloud</span>.</p>
       </div>
-      <div class="logo">
+      <div class="logo animated fadeInRight">
       </div>
     </div>
   </section>
 
   <section id="you" class="background-gradient">
     <div class="grid-2 has-gutter presentation">
-      <div class="logo">
+      <div class="logo animated fadeInLeft">
       </div>
-      <div class="content">
+      <div class="content animated fadeInRight">
         <p>Vous opérez à Nantes et êtes passionné par la French Tech.</p>
         <p>Entreprise de maximum 50 personnes, vous avez à coeur la passion de l'IT.</p>
         <p>Pour vous un salarié qui participe aux tech events comme le JUG, le DevFest est une évidence et c'est pourquoi vous n'hésitez pas à sponsoriser ces évènements.</p>
@@ -97,7 +100,7 @@
   <section id="skills" class="background-gradient">
     <h1>Compétences</h1>
 
-    <div class="grid-3 has-gutter skills">
+    <div class="grid has-gutter skills">
       <div id="skill-template" class="skill">
         <div class="skill-image"></div>
         <h2>Back end</h2>
@@ -126,22 +129,20 @@
     </div>
   </section>
 
-
-
   <section id="meeting" class="background-gradient">
-    <h1>Peut-être c'est on déjà croisé à un de ces événements ?</h1>
+    <h1>Vous y allez ? Moi aussi !</h1>
 
-    <div class="grid-4">
-      <div class="web2day">
-
-      </div>
-      <div class="devfest">
+    <div class="grid">
+      <div class="meet web2day animated slideInUp">
 
       </div>
-      <div class="software-craftsmanship">
+      <div class="meet devfest animated slideInUp">
 
       </div>
-      <div class="jug">
+      <div class="meet software-craftsmanship animated slideInUp">
+
+      </div>
+      <div class="meet jug animated slideInUp">
 
       </div>
     </div>
