@@ -283,5 +283,5 @@ var wow = new WOW(
     boxClass:     'animated',
     animateClass: 'animated'
   }
-);
-wow.init();
+)
+wow.init()

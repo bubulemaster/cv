@@ -9,19 +9,18 @@ body, html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif !important;
   font-weight: 500 !important;
-  line-height: 33px !important;
   text-align: center !important;
   color: #333 !important;
 }
 
 h1 {
-  font-size: 30px !important;
+  font-size: 3vw !important;
   padding-bottom: 20px;
   padding-top: 40px;
 }
 
 h2 {
-  font-size: 20px !important;
+  font-size: 2vw !important;
 }
 
 .btn {
@@ -53,79 +52,79 @@ h2 {
  */
 
 /* Image from https://pixabay.com/fr/ciel-nocturne-lune-mer-nuit-523892/ */
-@media all and (min-width: 0px) and (max-width:320px) {
+@media all and (max-width:320px), all and (max-height:213px) {
   #home {
     background-image: url(../img/night-sky-523892_320.jpg);
   }
 }
 
-@media all and (min-width: 321px) and (max-width:400px) {
+@media all and (min-width: 321px) and (max-width:400px), all and (min-height: 214px) and (max-height:267px) {
   #home {
     background-image: url(../img/night-sky-523892_400.jpg);
   }
 }
 
-@media all and (min-width: 401px) and (max-width:480px) {
+@media all and (min-width: 401px) and (max-width:480px), all and (min-height: 268px) and (max-height:320px) {
   #home {
     background-image: url(../img/night-sky-523892_480.jpg);
   }
 }
 
-@media all and (min-width: 481px) and (max-width:640px) {
+@media all and (min-width: 481px) and (max-width:640px), all and (min-height: 428px) and (max-height:427px) {
   #home {
     background-image: url(../img/night-sky-523892_640.jpg);
   }
 }
 
-@media all and (min-width: 641px) and (max-width:768px) {
+@media all and (min-width: 641px) and (max-width:768px), all and (min-height: 428px) and (max-height:512px) {
   #home {
     background-image: url(../img/night-sky-523892_768.jpg);
   }
 }
 
-@media all and (min-width: 769px) and (max-width:800px) {
+@media all and (min-width: 769px) and (max-width:800px), all and (min-height: 513px) and (max-height:533px) {
   #home {
     background-image: url(../img/night-sky-523892_800.jpg);
   }
 }
 
-@media all and (min-width: 801px) and (max-width:960px) {
+@media all and (min-width: 801px) and (max-width:960px), all and (min-height: 534px) and (max-height:640px) {
   #home {
     background-image: url(../img/night-sky-523892_960.jpg);
   }
 }
 
-@media all and (min-width: 961px) and (max-width:1024px) {
+@media all and (min-width: 961px) and (max-width:1024px), all and (min-height: 641px) and (max-height:683px) {
   #home {
     background-image: url(../img/night-sky-523892_1024.jpg);
   }
 }
 
-@media all and (min-width: 1025px) and (max-width:1200px) {
+@media all and (min-width: 1025px) and (max-width:1200px), all and (min-height: 684px) and (max-height:800px) {
   #home {
     background-image: url(../img/night-sky-523892_1200.jpg);
   }
 }
 
-@media all and (min-width: 1201px) and (max-width:1280px) {
+@media all and (min-width: 1201px) and (max-width:1280px), all and (min-height: 801px) and (max-height:853px) {
   #home {
     background-image: url(../img/night-sky-523892_1280.jpg);
   }
 }
 
-@media all and (min-width: 1281px) and (max-width:1400px) {
+@media all and (min-width: 1281px) and (max-width:1400px), all and (min-height: 854px) and (max-height:933px) {
   #home {
     background-image: url(../img/night-sky-523892_1400.jpg);
   }
 }
 
-@media all and (min-width: 1401px) and (max-width:1600px) {
+@media all and (min-width: 1401px) and (max-width:1600px), all and (min-height: 934px) and (max-height:1067px) {
   #home {
     background-image: url(../img/night-sky-523892_1600.jpg);
   }
 }
 
-@media all and (min-width:1601px) {
+@media all and (min-width:1601px), all and (min-height: 1068px) {
   #home {
     background-image: url(../img/night-sky-523892_1600.jpg);
   }
@@ -155,13 +154,18 @@ h2 {
  */
 .roundedImage {
   overflow:hidden;
-  -webkit-border-radius:50px;
-  -moz-border-radius:50px;
-  border-radius:50px;
-  width:90px;
-  height:90px;
+  -webkit-border-radius:8vw;
+  -moz-border-radius:8vw;
+  border-radius:8vw;
+  width:8vw;
+  height:8vw;
   display: inline-block;
   border: 1px solid #FFFFFF;
+}
+
+.emeric {
+  background:url(../img/emeric_martineau.jpg) no-repeat 0px 0px;
+  background-size: cover;
 }
 
 #name-and-function {
@@ -172,24 +176,24 @@ h2 {
 }
 
 #name-and-function > #name {
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: bold;
-  letter-spacing: 20px;
-  margin-top: 20px;
+  letter-spacing: 1vw;
+  margin-top: 1vw;
 }
 
 #name-and-function > #function {
-  font-size: 20px;
-  letter-spacing: 2px;
-  margin-top: 20px;
+  font-size: 1.8vw;
+  letter-spacing: 0.5vw;
+  margin-top: 1vw;
   color: #BAC1D7;
 }
 
 #name-and-function > #icon {
-  font-size: 40px;
-  letter-spacing: 2px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  font-size: 3vw;
+  letter-spacing: 0.5vw;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
 }
 
 #name-and-function > #icon > a {
@@ -266,11 +270,11 @@ h2 {
 
 .btn-download {
   color: #fff;
-  font-size: 14px;
+  font-size: 1.5vw;
   font-weight: 600;
-  padding:14px 40px;
-  border: 1px solid #6e6d6c;
-  margin-top: 40px;
+  padding:1vw 2vw;
+  border: 1px solid #fff;
+  margin-top: 1vw;;
 }
 
 .btn-download:hover {
@@ -285,7 +289,6 @@ h2 {
  */
 .presentation {
   min-height: 100%;
-  padding: 10px 10px 10px 10px;
 }
 
 .presentation .logo {
@@ -294,29 +297,24 @@ h2 {
 }
 
 .presentation .content {
-  font-size: 24px;
+  font-size: 2vw;
   line-height: 150%;
-  word-spacing: 5px;
+  word-spacing: 0.8vw;
 }
 
 .presentation .content p {
-  margin-bottom: 50px;
+  margin-bottom: 3vw;
 }
 
 /******************************************************************************
  * Me section
  */
-
 #me .logo {
   background-image: url(../img/me/bulldozer.png);
 }
 
 #me .content {
-  padding-left: 50px;
-}
-
-#me .content p {
-  margin-bottom: 50px;
+  padding-left: 3vw;
 }
 
 #me .keyword {
@@ -334,6 +332,10 @@ h2 {
 
 #you .logo {
   background-image: url(../img/you/nantes-logo-french-tech-white.png);
+}
+
+#you .content {
+  padding-right: 3vw;
 }
 
 /******************************************************************************
@@ -361,17 +363,18 @@ h2 {
 }
 
 div.techno-image {
-  width: 90px;
-  height: 90px;
+  width: 9vw;
+  height: 9vw;
   background-repeat: no-repeat;
   /*background-attachment: fixed;*/
   background-position: center;
+  background-size: contain;
   margin-left: auto;
   margin-right: auto;
 }
 
 .techno-row {
-  margin-bottom: 20px;
+  margin-bottom: 2vw;
 }
 
 .techno-row:hover > .star-rate {
@@ -408,7 +411,7 @@ div.techno-image {
 #skills {
   /*background: linear-gradient(45deg, #E789A1, #A35A9F);*/
   background-color: #A35A9F;
-  padding-bottom: 50px;
+  padding-bottom: 4vw;
 }
 
 .skill {
@@ -423,11 +426,14 @@ div.techno-image {
 .skill-image {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   opacity:0.75;
-  height: 150px;
-  width: 200px;
+  height: 12vw;
+  width: 16vw;
   margin-left: auto;
   margin-right: auto;
+  max-width: 200px;
+  max-height: 150px;
 }
 
 .skill:hover > .star-rate {
@@ -470,8 +476,11 @@ div.techno-image {
 #meeting .meet {
   background-repeat: no-repeat;
   background-position: center;
-  width: 300px;
-  height: 300px;
+  background-size: contain;
+  max-width: 300px;
+  max-height: 300px;
+  width: 15vw;
+  height: 15vw;
 }
 
 #meeting .web2day {
@@ -480,24 +489,24 @@ div.techno-image {
 
 #meeting .devfest {
   background-image: url(../img/meeting/devfest-nantes.png);
-  -webkit-animation-delay: 100ms;
-  -khtml-animation-delay: 100s;
-  -ms-animation-delay: 100s;
-  -o-animation-delay: 100s;
+  -webkit-animation-delay: 300ms;
+  -khtml-animation-delay: 300ms;
+  -ms-animation-delay: 300ms;
+  -o-animation-delay: 300ms;
 }
 
 #meeting .software-craftsmanship {
   background-image: url(../img/meeting/software-craftsmanship.png);
-  -webkit-animation-delay: 200ms;
-  -khtml-animation-delay: 200s;
-  -ms-animation-delay: 200s;
-  -o-animation-delay: 200s;
+  -webkit-animation-delay: 600ms;
+  -khtml-animation-delay: 600ms;
+  -ms-animation-delay: 600ms;
+  -o-animation-delay: 600ms;
 }
 
 #meeting .jug {
   background-image: url(../img/meeting/nantes-jug.png);
-  -webkit-animation-delay: 300ms;
-  -khtml-animation-delay: 300s;
-  -ms-animation-delay: 300s;
-  -o-animation-delay: 300s;
+  -webkit-animation-delay: 900ms;
+  -khtml-animation-delay: 900ms;
+  -ms-animation-delay: 900ms;
+  -o-animation-delay: 900ms;
 }
