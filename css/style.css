@@ -1,13 +1,18 @@
+@font-face {
+    font-family: RegencieLight;
+    src: url(../fonts/RegencieLight.ttf) format("truetype");
+}
+
 body, html {
   height:100%;
   width:100%;
   padding:0;
   margin:0;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: RegencieLight, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: RegencieLight, "Open Sans", sans-serif !important;
   font-weight: 500 !important;
   text-align: center !important;
   color: #333 !important;
@@ -37,14 +42,12 @@ h2 {
   padding-top: 14px;
 
   text-align: center;
-  text-decoration-color: #ffffff;
-  text-decoration-line: none;
-  text-decoration-style: solid;
+  text-decoration: none;
   text-transform: uppercase;
 
   color: #ffffff;
 
-  font-family: "Open Sans", sans-serif;
+  font-family: RegencieLight, "Open Sans", sans-serif;
 }
 
 /******************************************************************************
