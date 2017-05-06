@@ -138,6 +138,7 @@ h2 {
   height: 100%;
   position: relative;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .screen-center {
@@ -484,6 +485,8 @@ div.techno-image {
   max-height: 300px;
   width: 15vw;
   height: 15vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #meeting .web2day {
