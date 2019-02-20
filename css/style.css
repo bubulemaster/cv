@@ -42,12 +42,6 @@ body, html {
     border: 5px solid #FFFFFF;
 }
 
-#home .background-colored img {
-  margin: 0;
-  padding: 0;
-  opacity:1;
-}
-
 #name_and_function {
   text-align: center;
   text-transform: uppercase;
@@ -141,14 +135,17 @@ a:visited {
   color: #FFFFFF;
 }
 
-.rounded-item {
-  border-radius: 5px;
-  border-style: dashed;
+.border-white-with-space-40 {
   border-color: #FFFFFF;
-  border-width: 1px;
   padding: 40px 40px 40px 40px;
   margin: 0 40px 40px 40px;
   text-align: center;
+}
+
+.rounded {
+  border-radius: 5px;
+  border-style: dashed;
+  border-width: 1px;
 }
 
 .item-icon {
@@ -173,6 +170,29 @@ a:visited {
   width: 24px;
   fill: #FFFFFF;
   margin-right: 10px;
+}
+
+#cv {
+  margin: 40px 0 40px 0;
+}
+
+#cv .date {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  font-family: RegencieLight, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+}
+
+#cv .title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #4E9AF8;
+}
+
+.border-black-with-space-20 {
+  margin: 0 0 40px 0;
+  padding: 20px;
 }
 
 #credit {
