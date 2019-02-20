@@ -8,447 +8,195 @@ body, html {
   width:100%;
   padding:0;
   margin:0;
-  font-family: RegencieLight, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: RegencieLight, "Open Sans", sans-serif !important;
-  font-weight: 500 !important;
-  text-align: center !important;
-  color: #333 !important;
-}
-
-h1 {
-  font-size: 3vw !important;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
-
-h2 {
-  font-size: 2vw !important;
-}
 
 /******************************************************************************
  * Home section
  */
-
-/* Image from https://pixabay.com/fr/ciel-nocturne-lune-mer-nuit-523892/ */
-@media all and (max-width:320px), all and (max-height:213px) {
-  #home {
-    background-image: url(../img/night-sky-523892_320.jpg);
-  }
-}
-
-@media all and (min-width: 321px) and (max-width:400px), all and (min-height: 214px) and (max-height:267px) {
-  #home {
-    background-image: url(../img/night-sky-523892_400.jpg);
-  }
-}
-
-@media all and (min-width: 401px) and (max-width:480px), all and (min-height: 268px) and (max-height:320px) {
-  #home {
-    background-image: url(../img/night-sky-523892_480.jpg);
-  }
-}
-
-@media all and (min-width: 481px) and (max-width:640px), all and (min-height: 428px) and (max-height:427px) {
-  #home {
-    background-image: url(../img/night-sky-523892_640.jpg);
-  }
-}
-
-@media all and (min-width: 641px) and (max-width:768px), all and (min-height: 428px) and (max-height:512px) {
-  #home {
-    background-image: url(../img/night-sky-523892_768.jpg);
-  }
-}
-
-@media all and (min-width: 769px) and (max-width:800px), all and (min-height: 513px) and (max-height:533px) {
-  #home {
-    background-image: url(../img/night-sky-523892_800.jpg);
-  }
-}
-
-@media all and (min-width: 801px) and (max-width:960px), all and (min-height: 534px) and (max-height:640px) {
-  #home {
-    background-image: url(../img/night-sky-523892_960.jpg);
-  }
-}
-
-@media all and (min-width: 961px) and (max-width:1024px), all and (min-height: 641px) and (max-height:683px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1024.jpg);
-  }
-}
-
-@media all and (min-width: 1025px) and (max-width:1200px), all and (min-height: 684px) and (max-height:800px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1200.jpg);
-  }
-}
-
-@media all and (min-width: 1201px) and (max-width:1280px), all and (min-height: 801px) and (max-height:853px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1280.jpg);
-  }
-}
-
-@media all and (min-width: 1281px) and (max-width:1400px), all and (min-height: 854px) and (max-height:933px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1400.jpg);
-  }
-}
-
-@media all and (min-width: 1401px) and (max-width:1600px), all and (min-height: 934px) and (max-height:1067px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1600.jpg);
-  }
-}
-
-@media all and (min-width:1601px), all and (min-height: 1068px) {
-  #home {
-    background-image: url(../img/night-sky-523892_1600.jpg);
-  }
-}
-
 #home {
-  text-align: center;
-  height: 100%;
-  position: relative;
+  background-image: url(../img/snow-1920.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.screen-center {
-  position: absolute;
-  width: 100%;
-  /*
-    Si vous etes curieux et lisez le code source, sachez que les deux lignes du dessous
-    viennent de : https://www.alsacreations.com/tuto/lire/1032-comment-centrer-verticalement-sur-tous-les-navigateurs.html
-  */
-  top: 50%; /* poussé de la moitié de hauteur du référent */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
-}
-
-/*
-  Ma tete :-)
-  http://www.debray-jerome.fr/articles/Images-rondes-en-css3.html
- */
-.roundedImage {
-  overflow:hidden;
-  -webkit-border-radius:8vw;
-  -moz-border-radius:8vw;
-  border-radius:8vw;
-  width:8vw;
-  height:8vw;
-  display: inline-block;
-  border: 1px solid #FFFFFF;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
 }
 
 .emeric {
-  background:url(../img/emeric_martineau.jpg) no-repeat 0px 0px;
+    background: url(../img/emeric_martineau.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    margin: auto auto auto auto;
+}
+
+.roundedImage {
+    overflow: hidden;
+    border-radius: 128px;
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    border: 5px solid #FFFFFF;
+}
+
+#home .background-colored img {
+  margin: 0;
+  padding: 0;
+  opacity:1;
+}
+
+#name_and_function {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#name {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-top: 20px;
+  font-family: RegencieLight, "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#function {
+  font-size: 22px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+
+a:hover {
+  color: #4E9AF8;
+  text-decoration: none;
+}
+
+a:active {
+  color: #4E9AF8;
+}
+
+a {
+  color: #4E9AF8;
+}
+
+a:visited {
+  color: #4E9AF8;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+#about ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+#about li {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 3vw;
+    color: #4E9AF8;
+}
+
+.speech {
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+#resume {
+  margin: 40px 0 40px 0;
+  /*background-color: #4E9AF8;*/
+  padding: 80px 0 40px 0;
+  background-image: url(../img/snow-1920.jpg);
+  background-position-y: -100px;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-#name-and-function {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
+#resume a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#resume a:active {
   color: #FFFFFF;
 }
 
-#name-and-function > #name {
-  font-size: 5vw;
-  font-weight: bold;
-  letter-spacing: 1vw;
-  margin-top: 1vw;
-}
-
-#name-and-function > #function {
-  font-size: 1.8vw;
-  letter-spacing: 0.5vw;
-  margin-top: 1vw;
-  color: #BAC1D7;
-}
-
-#name-and-function > #function > a {
+#resume a {
   color: #FFFFFF;
 }
 
-#name-and-function > #function > a:hover {
-  color: #018ECB;
-}
-
-#name-and-function > #icon {
-  font-size: 3vw;
-  letter-spacing: 0.5vw;
-  margin-top: 1vw;
-  margin-bottom: 2vw;
-}
-
-#name-and-function > #icon > a {
+#resume a:visited {
   color: #FFFFFF;
 }
 
-#name-and-function > #icon > a:hover {
-  color: #018ECB;
-}
-
-#more {
-  color: #FFFFFF;
-  display: block;
-  cursor: pointer !important;
-
-  -webkit-animation-delay: 0s;
-  -webkit-animation-direction: normal;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-fill-mode: none;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: bounce;
-  -webkit-animation-play-state: running;
-  -webkit-animation-timing-function: ease;
-
-  -moz-animation-delay: 0s;
-  -moz-animation-direction: normal;
-  -moz-animation-duration: 3s;
-  -moz-animation-fill-mode: none;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-name: bounce;
-  -moz-animation-play-state: running;
-  -moz-animation-timing-function: ease;
-
-  -ms-animation-delay: 0s;
-  -ms-animation-direction: normal;
-  -ms-animation-duration: 3s;
-  -ms-animation-fill-mode: none;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-name: bounce;
-  -ms-animation-play-state: running;
-  -ms-animation-timing-function: ease;
-
-  -khtml-animation-delay: 0s;
-  -khtml-animation-direction: normal;
-  -khtml-animation-duration: 3s;
-  -khtml-animation-fill-mode: none;
-  -khtml-animation-iteration-count: infinite;
-  -khtml-animation-name: bounce;
-  -khtml-animation-play-state: running;
-  -khtml-animation-timing-function: ease;
-
-  -o-animation-delay: 0s;
-  -o-animation-direction: normal;
-  -o-animation-duration: 3s;
-  -o-animation-fill-mode: none;
-  -o-animation-iteration-count: infinite;
-  -o-animation-name: bounce;
-  -o-animation-play-state: running;
-  -o-animation-timing-function: ease;
-
-  animation-delay: 0s;
-  animation-direction: normal;
-  animation-duration: 3s;
-  animation-fill-mode: none;
-  animation-iteration-count: infinite;
-  animation-name: bounce;
-  animation-play-state: running;
-  animation-timing-function: ease;
-}
-
-.download {
-  padding-bottom: 50px;
-}
-
-.btn-download {
-  color: #fff;
-  font-size: 1.5vw;
-  font-weight: 600;
-  padding:1vw 2vw;
-  border: 1px solid #fff;
-  margin-top: 1vw;;
-}
-
-.btn-download:hover {
-  color: #fff;
-  background-color: #018ECB;
-  border: 1px solid #018ECB;
-  transition: 300ms;
-}
-
-/******************************************************************************
- * Presentation section
- */
-.presentation {
-  min-height: 100%;
-}
-
-.presentation .logo {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.presentation .content {
-  font-size: 2vw;
-  line-height: 150%;
-  word-spacing: 0.8vw;
-}
-
-.presentation .content p {
-  margin-bottom: 3vw;
-}
-
-/******************************************************************************
- * You section
- */
-
-#you {
-  /*background: linear-gradient(135deg, #E789A1, #A35A9F);*/
-  background-color: #A35A9F;
+.rounded-item {
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #FFFFFF;
+  border-width: 1px;
   padding: 40px 40px 40px 40px;
-}
-
-#you div {
-  height: 297px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-
-}
-
-#you div.nantes {
-  background-image: url(../img/you/nantes-logo-french-tech-white.png);
-}
-
-#you div.zenika {
-  background-image: url(../img/you/zenika.png);
-}
-
-/******************************************************************************
- * Techno that I use section
- */
-
-#used-techno {
-  /*min-height: 100%;*/
-}
-
-.used-techno {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.used-techno > div > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.techno-image {
-  width: 9vw;
-  height: 9vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bash {
-  background-image: url(../img/techno-used/bash.svg);
-}
-
-.docker {
-  background-image: url(../img/techno-used/docker.svg);
-}
-
-.k8s {
-  background-image: url(../img/techno-used/k8s.svg);
-}
-
-.java8 {
-  background-image: url(../img/techno-used/java8.svg);
-}
-
-.jenkins {
-  background-image: url(../img/techno-used/jenkins.svg);
-}
-
-.maven {
-  background-image: url(../img/techno-used/maven.svg);
-}
-
-.nexus {
-  background-image: url(../img/techno-used/nexus.png);
-}
-
-.angular {
-  background-image: url(../img/techno-used/angular.svg);
-}
-
-.techno-row {
-  margin-bottom: 2vw;
-}
-
-/******************************************************************************
- * For gradient background
- */
-.background-gradient h1, .background-gradient h2, .background-gradient p {
-  color: #ffffff !important;
-}
-
-/******************************************************************************
- * Techno that I use section
- */
-
-#skills {
-  /*background: linear-gradient(45deg, #E789A1, #A35A9F);*/
-  background-color: #A35A9F;
-  padding-bottom: 4vw;
-}
-
-.skill {
+  margin: 0 40px 40px 40px;
   text-align: center;
 }
 
-.skill-image {
+.item-icon {
+  height: 64px;
+  width: 64px;
+  fill: #FFFFFF;
+}
+
+.item {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.item li {
+  margin-bottom: 10px;
+}
+
+.li-icon {
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  fill: #FFFFFF;
+  margin-right: 10px;
+}
+
+#credit {
+  text-align: center;
+  background-image: url(../img/snow-1920.jpg);
+  background-position-y: bottom -150px;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity:0.75;
-  height: 12vw;
-  width: 16vw;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 200px;
-  max-height: 150px;
+  background-size: cover;
+  padding: 40px 0 40px 0;
 }
 
-/******************************************************************************
- * Meeting section
- */
-#meeting {
-  padding-left: 1%;
-  padding-right: 1%;
+#credit a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-#meeting .meet {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  max-width: 300px;
-  max-height: 300px;
-  width: 15vw;
-  height: 15vw;
-  margin-left: auto;
-  margin-right: auto;
+#credit a:active {
+  color: #FFFFFF;
 }
 
-#meeting .web2day {
-  background-image: url(../img/meeting/web2day.png);
+#credit a {
+  color: #FFFFFF;
 }
 
-#meeting .devfest {
-  background-image: url(../img/meeting/devfest.svg);
-  -webkit-animation-delay: 300ms;
-  -khtml-animation-delay: 300ms;
-  -ms-animation-delay: 300ms;
-  -o-animation-delay: 300ms;
+#credit a:visited {
+  color: #FFFFFF;
 }
