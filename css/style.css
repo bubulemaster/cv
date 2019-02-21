@@ -47,10 +47,8 @@ body, html {
 }
 
 #name {
-  font-size: 60px;
-  font-weight: bold;
-  letter-spacing: 10px;
   margin-top: 20px;
+  font-weight: bold;
   font-family: RegencieLight, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -78,7 +76,6 @@ a:visited {
 }
 
 .container {
-  max-width: 960px;
   margin: auto;
 }
 
@@ -220,6 +217,11 @@ a:visited {
 
 @media (max-width: 468px) {
   /* Phone */
+  #name {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
   #home {
     background-image: url(../img/snow-468.jpg);
     height: 300px;
@@ -231,11 +233,20 @@ a:visited {
 
   #credit {
     background-image: url(../img/snow-468.jpg);
+  }
+
+  .container {
+    max-width: 80%;
   }
 }
 
 @media (min-width: 468px) and (max-width: 767px) {
   /* Vertical pad */
+  #name {
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
   #home {
     background-image: url(../img/snow-767.jpg);
     height: 300px;
@@ -247,11 +258,20 @@ a:visited {
 
   #credit {
     background-image: url(../img/snow-767.jpg);
+  }
+
+  .container {
+    max-width: 80%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* Horizontal pad */
+  #name {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
   #home {
     background-image: url(../img/snow-991.jpg);
     height: 300px;
@@ -263,11 +283,20 @@ a:visited {
 
   #credit {
     background-image: url(../img/snow-991.jpg);
+  }
+
+  .container {
+    max-width: 80%;
   }
 }
 
 @media (min-width: 992px) {
   /* Laptop */
+  #name {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+
   #home {
     background-image: url(../img/snow-1920.jpg);
     height: 300px;
@@ -279,5 +308,9 @@ a:visited {
 
   #credit {
     background-image: url(../img/snow-1920.jpg);
+  }
+
+  .container {
+    max-width: 960px;
   }
 }
