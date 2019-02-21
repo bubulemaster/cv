@@ -16,12 +16,11 @@ body, html {
  * Home section
  */
 #home {
-  background-image: url(../img/snow-1920.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   margin: 0;
   padding: 0;
-  height: 300px;
   display:flex;
   justify-content:center;
   align-items:flex-end;
@@ -110,11 +109,9 @@ a:visited {
 
 #resume {
   margin: 40px 0 40px 0;
-  /*background-color: #4E9AF8;*/
-  padding: 80px 0 40px 0;
-  background-image: url(../img/snow-1920.jpg);
-  background-position-y: -100px;
+  padding: 40px 0 40px 0;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -138,7 +135,6 @@ a:visited {
 .border-white-with-space-40 {
   border-color: #FFFFFF;
   padding: 40px 40px 40px 40px;
-  margin: 0 40px 40px 40px;
   text-align: center;
 }
 
@@ -197,9 +193,9 @@ a:visited {
 
 #credit {
   text-align: center;
-  background-image: url(../img/snow-1920.jpg);
-  background-position-y: bottom -150px;
+  background-position-y: -150px;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   padding: 40px 0 40px 0;
 }
@@ -219,4 +215,69 @@ a:visited {
 
 #credit a:visited {
   color: #FFFFFF;
+}
+
+
+@media (max-width: 468px) {
+  /* Phone */
+  #home {
+    background-image: url(../img/snow-468.jpg);
+    height: 300px;
+  }
+
+  #resume {
+    background-image: url(../img/snow-468.jpg);
+  }
+
+  #credit {
+    background-image: url(../img/snow-468.jpg);
+  }
+}
+
+@media (min-width: 468px) and (max-width: 767px) {
+  /* Vertical pad */
+  #home {
+    background-image: url(../img/snow-767.jpg);
+    height: 300px;
+  }
+
+  #resume {
+    background-image: url(../img/snow-767.jpg);
+  }
+
+  #credit {
+    background-image: url(../img/snow-767.jpg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Horizontal pad */
+  #home {
+    background-image: url(../img/snow-991.jpg);
+    height: 300px;
+  }
+
+  #resume {
+    background-image: url(../img/snow-991.jpg);
+  }
+
+  #credit {
+    background-image: url(../img/snow-991.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  /* Laptop */
+  #home {
+    background-image: url(../img/snow-1920.jpg);
+    height: 300px;
+  }
+
+  #resume {
+    background-image: url(../img/snow-1920.jpg);
+  }
+
+  #credit {
+    background-image: url(../img/snow-1920.jpg);
+  }
 }
